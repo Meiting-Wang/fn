@@ -1,0 +1,9 @@
+v 1.0.0
+d fn. Return the name and path of the specified files
+d Meiting Wang
+d Institute for Economic and Social Research, Jinan University
+d Guangzhou, China
+d wangmeiting92@gmail.com
+
+f fn.ado
+f fn.sthlp
