@@ -27,8 +27,4 @@
 # *.png
 # *.tif
 
-# Script files
-*.bat
-*.sh
-
 # End of https://www.gitignore.io/api/stata
