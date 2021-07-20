@@ -43,20 +43,21 @@ else if ustrregexm("`dirname'","(^\.)([/\\].*)") {
 
 
 *-------------------主程序--------------------------
-local list: dir `"`dirname'"' files `"`pattern'"', respectcase
-
+local filenames: dir `"`dirname'"' files `"`pattern'"', respectcase
+local files_num = ustrlen(ustrregexra(`"`filenames'"',`"[^"]"',"")) / 2 //文件名的数量
 
 
 *---------------------结果的输出与返回值----------------------
 dis _n as text `"dirname: {result:`dirname'}"'
-if `"`list'"' != "" {
-	dis as text `"  files: {result:`list'}"'
+if `"`filenames'"' != "" {
+	dis as text `"  files: {result:`filenames'}"'
 }
 else {
 	dis as text `"  files: {result:No files found}"'
 }
 
-return local files `"`list'"'
+return local files `"`filenames'"'
+return local files_num `"`files_num'"'
 return local pattern `"`pattern'"'
 return local write_dirname `"`write_dirname'"'
 return local dirname `"`dirname'"'

@@ -9,4 +9,4 @@ fn fn.* //展示当前文件夹符合 "fn.*" 格式的文件
 fn *.ado //展示当前文件夹符合 "*.ado" 格式的文件
 fn c:\Windows\*.exe //展示 "c:\Windows\" 路径下符合 "*.exe" 格式的文件
 fn `c(sysdir_plus)'*.txt //展示 Stata plus 文件夹中符合 "*.txt" 格式的文件
-return list //展示储存在r()中的内容
+ret list //展示储存在r()中的内容
