@@ -49,7 +49,6 @@ local list: dir `"`dirname'"' files `"`pattern'"', respectcase
 
 *---------------------结果的输出与返回值----------------------
 dis _n as text `"dirname: {result:`dirname'}"'
-dis as text `"pattern: {result:`pattern'}"'
 if `"`list'"' != "" {
 	dis as text `"  files: {result:`list'}"'
 }
