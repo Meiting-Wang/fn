@@ -34,11 +34,11 @@ if ustrregexm("`dirname'","(^\.\.)([/\\].*)") { //输入时 .. 开头的必定�
 	local temp1 = ustrregexs(2)
 	local temp2 = ustrregexra(`"`c(pwd)'"',"\\[^\\]+$","")
 	local dirname `"`temp2'`temp1'"'
-} //这里的 dirname 带有/或\
+} //这里的 dirname 最后带有/或\
 else if ustrregexm("`dirname'","(^\.)([/\\].*)") {
 	local temp1 = ustrregexs(2)
 	local dirname `"`c(pwd)'`temp1'"'
-} //这里的 dirname 带有/或\
+} //这里的 dirname 最后带有/或\
 
 
 *-------------------主程序--------------------------

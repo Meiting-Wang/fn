@@ -10,7 +10,7 @@ REPO_DESCRIPTION="[W-13] Return the name and path of the specified files."
 
 #-------------无需修改部分------------------
 USER_NAME="Meiting-Wang"
-TOKEN="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"
+TOKEN="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"
 
 #本地 repository 初始化
 git init #默认创建master分支
