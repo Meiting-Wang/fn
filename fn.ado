@@ -21,7 +21,7 @@ if ~ustrregexm("`anything'","(/)|(\\)") {
 }
 else if ustrregexm("`anything'","^([^/\\].*[/\\])([^/\\]+)$") {
 	local dirname = ustrregexs(1) //最后带有/或\
-	local relative_dirname = ustrregexs(1) //最后带有/或\
+	local write_dirname = ustrregexs(1) //最后带有/或\
 	local pattern = ustrregexs(2)
 }
 else {
@@ -58,7 +58,7 @@ else {
 
 return local files `"`list'"'
 return local pattern `"`pattern'"'
-return local relative_dirname `"`relative_dirname'"'
+return local write_dirname `"`write_dirname'"'
 return local dirname `"`dirname'"'
 
 end
