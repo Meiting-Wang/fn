@@ -17,6 +17,7 @@ local anything = ustrregexra(`"`anything'"',`"(^"\s*)|(\s*"$)"',"") //去除anyt
 
 if ~ustrregexm("`anything'","(/)|(\\)") {
 	local dirname ".\"
+	local write_dirname ""
 	local pattern "`anything'"
 }
 else if ustrregexm("`anything'","^([^/\\].*[/\\])([^/\\]+)$") {
