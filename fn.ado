@@ -8,11 +8,15 @@
 program define fn, rclass
 version 16.0
 
-syntax anything(id="Filenames format setting")
+syntax [anything(id="Filenames format setting")]
 
 
 *----------------前期程序-------------------
 *初步提取dirname和pattern
+if `"`anything'"' == "" {
+	local anything "*"
+} //如果 anything 为空，则默认报告当前文件夹下的所有文件
+
 local anything = ustrregexra(`"`anything'"',`"(^"\s*)|(\s*"$)"',"") //去除anything中的双引号和前端和末尾多余的空格
 
 if ~ustrregexm("`anything'","(/)|(\\)") {
