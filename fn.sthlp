@@ -36,6 +36,7 @@
 {marker Examples}{title:Examples}
 
 {p 4 4 2}Show all files in the current folder{p_end}
+{p 8 8 2}. {stata fn}{p_end}
 {p 8 8 2}. {stata fn *}{p_end}
 
 {p 4 4 2}Show all files in the subfolder {bf:"mydir"} under the current folder{p_end}
