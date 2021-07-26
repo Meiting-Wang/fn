@@ -11,7 +11,7 @@ version 16.0
 syntax [anything(id="Filenames format setting")]
 
 
-*----------------前期程序-------------------
+*----------------前期程序------------------
 *初步提取dirname和pattern
 if `"`anything'"' == "" {
 	local anything "*"
