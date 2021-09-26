@@ -53,18 +53,20 @@ local files_num = ustrlen(ustrregexra(`"`filenames'"',`"[^"]"',"")) / 2 //文件
 
 
 *---------------------结果的输出与返回值----------------------
-dis _n as text `"dirname: {result:`dirname'}"'
 if `"`filenames'"' != "" {
-	dis as text `"  files: {result:`filenames'}"'
+	dis _n as text `"files: {result:`filenames'}"'
 }
 else {
-	dis as text `"  files: {result:No files found}"'
+	dis _n as text `"files: {result:No files found}"'
 }
 
-return local files `"`filenames'"'
-return local files_num `"`files_num'"'
-return local pattern `"`pattern'"'
+dis as text `"dirname: {result:`dirname'}"'
+
+
 return local write_dirname `"`write_dirname'"'
 return local dirname `"`dirname'"'
+return local pattern `"`pattern'"'
+return local files_num `"`files_num'"'
+return local files `"`filenames'"'
 
 end
